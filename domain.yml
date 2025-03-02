@@ -8,6 +8,16 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - ask_education_rights
+  - ask_privacy_safety
+  - ask_legal_aid
+  - ask_financial_aid
+  - ask_mental_health
+  - ask_safe_spaces
+  - ask_emergency_help
+
+
+
 
 responses:
   utter_greet:
@@ -28,6 +38,30 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_ask_education_rights:
+    - text: "In Ontario, all children under 18 have the right to attend school regardless of their immigration status. Schools cannot deny admission based on lack of documentation."
+
+  utter_ask_privacy_safety:
+    - text: "Your school is not required to report your immigration status to authorities. However, not all educators may be aware of privacy protections."
+
+  utter_ask_legal_aid:
+    - text: "There are organizations that provide free legal aid. You can contact Ontario Justice Education Network or Legal Aid Ontario."
+
+  utter_ask_financial_aid:
+    - text: "Some scholarships and financial aid options may be available for students regardless of immigration status. You can check community organizations, universities, and private scholarships."
+
+  utter_ask_mental_health:
+    - text: "You're not alone. There are support groups, counselors, and mental health professionals who can provide help confidentially. You can contact community centers or school counselors who specialize in immigrant support."
+
+  utter_ask_safe_spaces:
+    - text: "There are many community organizations that provide help to students facing immigration uncertainty. Try checking local community centers, legal aid clinics, or immigrant support groups."
+
+  utter_ask_emergency_help:
+    - text: "If you or someone you know is in immediate danger, contact an immigrant rights organization or a legal aid service immediately. You can also reach out to emergency hotlines for undocumented students."
+
+actions:
+  - action_provide_legal_aid
 
 session_config:
   session_expiration_time: 60
