@@ -11,3 +11,43 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Provide education rights information
+  steps:
+  - intent: ask_education_rights
+  - action: utter_ask_education_rights
+
+- rule: Provide privacy safety information
+  steps:
+  - intent: ask_privacy_safety
+  - action: utter_ask_privacy_safety
+
+- rule: Provide legal aid information
+  steps:
+  - intent: ask_legal_aid
+  - action: utter_ask_legal_aid
+
+
+- rule: Provide financial aid information
+  steps:
+  - intent: ask_financial_aid
+  - action: utter_ask_financial_aid
+
+- rule: Provide mental health support information
+  steps:
+  - intent: ask_mental_health
+  - action: utter_ask_mental_health
+
+- rule: Provide community support resources
+  steps:
+  - intent: ask_safe_spaces
+  - action: utter_ask_safe_spaces
+
+- rule: Provide emergency help information
+  steps:
+  - intent: ask_emergency_help
+  - action: utter_ask_emergency_help
+
+
+
+
