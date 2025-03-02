@@ -25,3 +25,19 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+
+from rasa_sdk import Action
+from rasa_sdk.executor import CollectingDispatcher
+
+class ActionProvideLegalAid(Action):
+    def name(self):
+        return "action_provide_legal_aid"
+
+    def run(self, dispatcher, tracker, domain):
+        response = ("Here are some confidential legal resources:\n"
+                    "- [Ontario Justice Education Network](https://ojen.ca)\n"
+                    "- Legal Aid Ontario: 1-800-668-8258\n"
+                    "- [Canadian Centre for Refugee & Immigrant Health](https://ccrweb.ca)")
+        dispatcher.utter_message(text=response)
+        return []
+

@@ -89,3 +89,58 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: ask_education_rights
+  examples: |
+    - Can I go to school if I don’t have immigration status?
+    - Do undocumented students have education rights in Ontario?
+    - Can my school deny me admission because of my immigration status?
+    - What documents do I need to enroll in school in Ontario?
+    - Can I go to college or university if I don’t have a legal status?
+
+- intent: ask_privacy_safety
+  examples: |
+    - If I tell my teacher my immigration status, can they report me?
+    - Will my school share my information with immigration authorities?
+    - Is it safe to ask for help about my status?
+    - How can I ask for help without getting in trouble?
+    - Who can I trust with my immigration status?
+    - Does my school collect information about my status?
+
+- intent: ask_legal_aid
+  examples: |
+    - Where can I get free legal help?
+    - How do I talk to a lawyer about my immigration status?
+    - Is there someone who can help me understand my rights?
+    - Can I get a free lawyer to help me?
+    - What legal aid services are available for students like me?
+    - How do I find an immigration lawyer in Ontario?
+
+- intent: ask_financial_aid
+  examples: |
+    - Can I get financial aid if I don’t have immigration status?
+    - Are there scholarships for undocumented students?
+    - How do I apply for financial support as a student with immigration uncertainty?
+    - Can I work while studying if I don’t have legal status?
+
+- intent: ask_mental_health
+  examples: |
+    - I feel stressed about my immigration status. What should I do?
+    - Are there mental health services for students like me?
+    - Who can I talk to about my situation?
+    - I’m scared about my future. Can you help?
+
+- intent: ask_safe_spaces
+  examples: |
+    - Where can I find help in my community?
+    - Are there organizations that help students in my situation?
+    - Can I go to a community center for help?
+    - How do I find support groups for undocumented students?
+
+- intent: ask_emergency_help
+  examples: |
+    - What should I do if I get detained by immigration authorities?
+    - Who can I call in an emergency?
+    - How do I stay safe if I’m at risk of deportation?
+    - Are there emergency hotlines for undocumented students?
+
