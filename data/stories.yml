@@ -28,3 +28,34 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: Online Learning Inquiry
+  steps:
+  - intent: ask_online_learning
+  - action: utter_ask_online_learning
+
+- story: Course Login Help
+  steps:
+  - intent: ask_course_login
+  - action: utter_ask_course_login
+
+- story: eBASE Permits
+  steps:
+  - intent: ask_ebase_permits
+  - action: utter_ask_ebase_permits
+
+- story: Social Worker Help
+  steps:
+  - intent: ask_social_worker_help
+  - action: utter_ask_social_worker_help
+
+- story: Social Worker Access
+  steps:
+  - intent: ask_social_worker_access
+  - action: utter_ask_social_worker_access
+
+- story: Social Worker Consent
+  steps:
+  - intent: ask_social_worker_consent
+  - action: utter_ask_social_worker_consent
+
