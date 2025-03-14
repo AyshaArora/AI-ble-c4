@@ -30,8 +30,16 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
+    - text: |
+        Hello! 👋 I'm your education support chatbot. You can ask me questions like:
+        
+        - "How do I log in to my online course?"
+        - "Can I go to school if I don’t have immigration status?"
+        - "What should I do if I need a school social worker?"
+        - "How does the speech-language pathologist help students?"
+        - "Do I have to log in to my course at a specific time?"
+        
+        How can I assist you today?
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
