@@ -144,3 +144,53 @@ nlu:
     - How do I stay safe if I’m at risk of deportation?
     - Are there emergency hotlines for undocumented students?
 
+- intent: ask_online_learning
+  examples: |
+    - How can I tell if online learning is right for me?
+    - Is online learning good for me?
+    - Am I a good fit for eLearning?
+    - Should I take an online course?
+
+- intent: ask_course_login
+  examples: |
+    - How do I log in to my online course?
+    - Where do I access my online learning?
+    - What is the DPCDSB eLearning portal?
+    - How can I access my course online?
+
+- intent: ask_class_schedule
+  examples: |
+    - Do I have to log in to my course at a specific time of day?
+    - Do I need to be online at a set time?
+    - Is my online learning schedule flexible?
+
+- intent: ask_ebase_permits
+  examples: |
+    - How do I make permits in eBASE?
+    - What is the eBASE system?
+    - How do I use eBASE for school permits?
+
+- intent: ask_speech_language_services
+  examples: |
+    - How does the speech-language pathologist support students?
+    - What help do speech-language pathologists provide?
+    - Who supports students with language impairments?
+
+- intent: ask_social_worker_help
+  examples: |
+    - What issues can the School Social Worker assist with?
+    - How can school social workers help students?
+    - What kind of support do school social workers offer?
+
+- intent: ask_social_worker_access
+  examples: |
+    - I really need to talk to someone, how can I access my school social worker?
+    - How do I meet with a school social worker?
+    - Can I request an appointment with a social worker?
+
+- intent: ask_social_worker_consent
+  examples: |
+    - What does it mean when I sign consent?
+    - Why do I need to sign a form for social work?
+    - Do my parents need to sign for me to see a social worker?
+

@@ -15,6 +15,15 @@ intents:
   - ask_mental_health
   - ask_safe_spaces
   - ask_emergency_help
+  - ask_online_learning
+  - ask_course_login
+  - ask_ebase_permits
+  - ask_social_worker_help
+  - ask_social_worker_access
+  - ask_social_worker_consent
+  - ask_class_schedule
+  - ask_speech_language_services
+
 
 
 
@@ -40,25 +49,49 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
   utter_ask_education_rights:
-    - text: "In Ontario, all children under 18 have the right to attend school regardless of their immigration status. Schools cannot deny admission based on lack of documentation."
+  - text: "In Ontario, all children under 18 have the right to attend school regardless of their immigration status. Schools cannot deny admission based on lack of documentation."
 
   utter_ask_privacy_safety:
-    - text: "Your school is not required to report your immigration status to authorities. However, not all educators may be aware of privacy protections."
+  - text: "Your school is not required to report your immigration status to authorities. However, not all educators may be aware of privacy protections."
 
   utter_ask_legal_aid:
-    - text: "There are organizations that provide free legal aid. You can contact Ontario Justice Education Network or Legal Aid Ontario."
+  - text: "There are organizations that provide free legal aid. You can contact Ontario Justice Education Network or Legal Aid Ontario."
 
   utter_ask_financial_aid:
-    - text: "Some scholarships and financial aid options may be available for students regardless of immigration status. You can check community organizations, universities, and private scholarships."
+  - text: "Some scholarships and financial aid options may be available for students regardless of immigration status. You can check community organizations, universities, and private scholarships."
 
   utter_ask_mental_health:
-    - text: "You're not alone. There are support groups, counselors, and mental health professionals who can provide help confidentially. You can contact community centers or school counselors who specialize in immigrant support."
+  - text: "You're not alone. There are support groups, counselors, and mental health professionals who can provide help confidentially. You can contact community centers or school counselors who specialize in immigrant support."
 
   utter_ask_safe_spaces:
-    - text: "There are many community organizations that provide help to students facing immigration uncertainty. Try checking local community centers, legal aid clinics, or immigrant support groups."
+  - text: "There are many community organizations that provide help to students facing immigration uncertainty. Try checking local community centers, legal aid clinics, or immigrant support groups."
 
   utter_ask_emergency_help:
-    - text: "If you or someone you know is in immediate danger, contact an immigrant rights organization or a legal aid service immediately. You can also reach out to emergency hotlines for undocumented students."
+  - text: "If you or someone you know is in immediate danger, contact an immigrant rights organization or a legal aid service immediately. You can also reach out to emergency hotlines for undocumented students."
+
+  utter_ask_online_learning:
+  - text: "Assess your learning style and habits to determine if online learning suits you. A quick quiz is available to help with this assessment."
+
+  utter_ask_course_login:
+  - text: "Visit the DPCDSB eLearning portal and use your 9-digit student number along with your current network password to access your courses."
+
+  utter_ask_class_schedule:
+  - text: "No, you don't have to log in at a specific time. However, it's important to log in every school day and complete the assigned work by the deadlines set by your teacher."
+
+  utter_ask_ebase_permits:
+  - text: "To create permits, refer to the guide provided by DPCDSB, which outlines the process and features of the eBASE system."
+
+  utter_ask_speech_language_services:
+   - text: "Speech-language pathologists work collaboratively with educators to support students facing language challenges, especially among children with behavioral issues."
+
+  utter_ask_social_worker_help:
+  - text: "School Social Workers are available to consult on any concerns and assess whether further intervention is needed."
+
+  utter_ask_social_worker_access:
+  - text: "You can access school social work services by speaking with your teacher, guidance counselor, child and youth worker, or by contacting your School Social Worker directly."
+
+  utter_ask_social_worker_consent:
+  - text: "If you are over 16, you will be asked to sign a consent form. If you are under 16, your parent(s)/guardian(s) must sign on your behalf."
 
 actions:
   - action_provide_legal_aid
