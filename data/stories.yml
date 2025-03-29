@@ -59,3 +59,67 @@ stories:
   - intent: ask_social_worker_consent
   - action: utter_ask_social_worker_consent
 
+- story: Answer online learning fit
+  steps:
+  - intent: ask_online_learning_fit
+  - action: utter_ask_online_learning_fit
+
+- story: Answer login time
+  steps:
+  - intent: ask_login_time
+  - action: utter_ask_login_time
+
+- story: Answer login instructions
+  steps:
+  - intent: ask_login_instructions
+  - action: utter_ask_login_instructions
+
+- story: Answer eBASE permits
+  steps:
+  - intent: ask_ebase_permits
+  - action: utter_ask_ebase_permits
+
+- story: Answer speech support
+  steps:
+  - intent: ask_speech_support
+  - action: utter_ask_speech_support
+
+- story: Answer social worker issues
+  steps:
+  - intent: ask_social_worker_issues
+  - action: utter_ask_social_worker_issues
+
+- story: Answer social worker help
+  steps:
+  - intent: ask_social_worker_help
+  - action: utter_ask_social_worker_help
+
+- story: Answer access social worker
+  steps:
+  - intent: ask_access_social_worker
+  - action: utter_ask_access_social_worker
+
+- story: Answer why social worker
+  steps:
+  - intent: ask_why_social_worker
+  - action: utter_ask_why_social_worker
+
+- story: Answer speaking voluntary
+  steps:
+  - intent: ask_speaking_voluntary
+  - action: utter_ask_speaking_voluntary
+
+- story: Answer consent meaning
+  steps:
+  - intent: ask_consent_meaning
+  - action: utter_ask_consent_meaning
+
+- story: Answer who social worker talks to
+  steps:
+  - intent: ask_who_social_worker_talks_to
+  - action: utter_ask_who_social_worker_talks_to
+
+- story: Answer confidentiality
+  steps:
+  - intent: ask_confidentiality
+  - action: utter_ask_confidentiality

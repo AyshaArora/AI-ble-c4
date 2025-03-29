@@ -17,12 +17,23 @@ intents:
   - ask_emergency_help
   - ask_online_learning
   - ask_course_login
-  - ask_ebase_permits
   - ask_social_worker_help
   - ask_social_worker_access
   - ask_social_worker_consent
   - ask_class_schedule
   - ask_speech_language_services
+  - ask_online_learning_fit
+  - ask_login_time
+  - ask_login_instructions
+  - ask_ebase_permits
+  - ask_speech_support
+  - ask_social_worker_issues
+  - ask_access_social_worker
+  - ask_why_social_worker
+  - ask_speaking_voluntary
+  - ask_consent_meaning
+  - ask_who_social_worker_talks_to
+  - ask_confidentiality
 
 
 
@@ -101,8 +112,44 @@ responses:
   utter_ask_social_worker_consent:
   - text: "If you are over 16, you will be asked to sign a consent form. If you are under 16, your parent(s)/guardian(s) must sign on your behalf."
 
+  utter_ask_online_learning_fit:
+    - text: Assess your learning style and habits to determine if online learning suits you. A quick quiz is available to help with this assessment.
+
+  utter_ask_login_time:
+    - text: No, you don't have to log in at a specific time. Just make sure to log in daily and submit your work on time.
+
+  utter_ask_login_instructions:
+    - text: Visit the DPCDSB eLearning portal and use your 9-digit student number and current password to log in.
+
+
+  utter_ask_speech_support:
+    - text: Speech-language pathologists work with educators to support students with language impairments, especially those with behavioral issues.
+
+  utter_ask_social_worker_issues:
+    - text: School Social Workers can help with personal, social, family, or school concerns and determine if further help is needed.
+
+  utter_ask_access_social_worker:
+    - text: Speak with your teacher, guidance counselor, or youth worker, or contact the social worker directly to get support.
+
+  utter_ask_why_social_worker:
+    - text: They may reach out if someone is concerned about you—whether you're feeling upset, or there's an attendance concern.
+
+  utter_ask_speaking_voluntary:
+    - text: No, it's voluntary except for cases of repeated unexcused absences. Otherwise, it's your choice to participate.
+
+  utter_ask_consent_meaning:
+    - text: If over 16, you’ll sign a form. If under 16, your guardian does. It grants access to support and your student record.
+
+  utter_ask_who_social_worker_talks_to:
+    - text: They may speak with people involved in your life like teachers, parents, guidance, or school staff to better understand your needs.
+
+  utter_ask_confidentiality:
+    - text: Everything you share is confidential unless permission is given. If you're under 16 and at risk, it may be reported by law.
+
+
 actions:
   - action_provide_legal_aid
+  
 
 session_config:
   session_expiration_time: 60
