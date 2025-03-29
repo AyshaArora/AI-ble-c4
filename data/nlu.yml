@@ -194,3 +194,100 @@ nlu:
     - Why do I need to sign a form for social work?
     - Do my parents need to sign for me to see a social worker?
 
+- intent: ask_online_learning_suitability
+  examples: |
+    - How can I tell if online learning is right for me?
+    - Is online learning good for me?
+    - How do I know if I'm suited for eLearning?
+
+- intent: ask_course_login_time
+  examples: |
+    - Do I need to log in at a specific time?
+    - Is there a schedule for logging in?
+    - Can I log in whenever I want?
+
+- intent: ask_social_worker_help
+  examples: |
+    - What can a school social worker help me with?
+    - How can the social worker help me?
+    - What do school social workers do?
+
+- intent: ask_online_learning_fit
+  examples: |
+      - How can I tell if online learning is right for me?
+      - Is online learning good for me?
+      - Will online school suit my learning style?
+
+- intent: ask_login_time
+  examples: |
+      - Do I have to log in to my course at a specific time of day?
+      - What time do I need to log in for online classes?
+      - Is online class at a set time?
+
+- intent: ask_login_instructions
+  examples: |
+      - How do I log in to my online course?
+      - Where do I access the eLearning portal?
+      - What's the process to access my course?
+
+- intent: ask_ebase_permits
+  examples: |
+      - How do I make permits in eBASE?
+      - What features does the eBASE system have?
+      - How do I create an eBASE permit?
+
+- intent: ask_speech_support
+  examples: |
+      - How does the speech-language pathologist support students?
+      - What do speech-language pathologists do?
+      - How can a speech therapist help?
+
+- intent: ask_social_worker_issues
+  examples: |
+      - What issues can the School Social Worker assist with?
+      - What can I talk to a school social worker about?
+      - How can a school social worker help?
+
+- intent: ask_social_worker_help
+  examples: |
+      - How can school social workers help me?
+      - What does a social worker do at school?
+      - Can I talk to someone about school or family problems?
+
+- intent: ask_access_social_worker
+  examples: |
+      - How can I access my school social worker?
+      - Who do I talk to if I need help from a social worker?
+      - I want to meet a school social worker. What do I do?
+
+- intent: ask_why_social_worker
+  examples: |
+      - Why would a social worker want to speak with me?
+      - What are reasons the social worker may call me?
+      - Why did a social worker reach out?
+
+- intent: ask_speaking_voluntary
+  examples: |
+      - Do I have to speak to the social worker?
+      - Is it mandatory to meet the school social worker?
+      - Can I refuse social work services?
+
+- intent: ask_consent_meaning
+  examples: |
+    - What does it mean when I sign consent?
+    - Why do I need to sign a consent form?
+    - What is the purpose of giving consent?
+
+- intent: ask_who_social_worker_talks_to
+  examples: |
+    - Who will you talk to about me?
+    - Will the social worker speak with my parents?
+    - Does the social worker talk to my teachers?
+
+- intent: ask_confidentiality
+  examples: |
+    - What happens to information I share with my school social worker?
+    - Is my conversation with the social worker confidential?
+    - Will my information be kept private?
+
+
