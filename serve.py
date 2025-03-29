@@ -14,11 +14,12 @@ def hello():
     })
 
 async def start_rasa():
+    port = os.environ.get("PORT", "10000")  # fallback for local use
     await main([
         "run",
         "--enable-api",
         "--cors", "*",
-        "--port", "10000",
+        "--port", port,              # <== dynamically use Render's PORT
         "--host", "0.0.0.0"
     ])
 
@@ -26,5 +27,6 @@ if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     loop.create_task(start_rasa())
 
-    port = int(os.environ.get("PORT", 10000))  # Render sets this
+    # Also use same port for Flask to help Render detect it
+    port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
