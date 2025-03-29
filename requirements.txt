@@ -1,2 +1,5 @@
 rasa
 rasa-sdk
+aiohttp==3.7.4.post0
+rasa==3.5.10
+rasa-sdk==3.5.0
