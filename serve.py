@@ -1,32 +1,34 @@
+# serve.py
 import os
-import asyncio
+import threading
 from flask import Flask, Response
-from rasa.__main__ import main
+from rasa.__main__ import main as rasa_main
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return Response("✅ Rasa server is running!", headers={
+    return Response("Rasa server is running 🎉", headers={
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
         'Access-Control-Allow-Headers': 'Content-Type, Authorization'
     })
 
-async def start_rasa():
-    port = os.environ.get("PORT", "10000")  # fallback for local use
-    await main([
+def run_rasa():
+    # This is equivalent to: rasa run --enable-api --cors "*" --port 10000 --host 0.0.0.0 -m models
+    rasa_main([
         "run",
         "--enable-api",
         "--cors", "*",
-        "--port", port,              # <== dynamically use Render's PORT
-        "--host", "0.0.0.0"
+        "--port", os.environ.get("PORT", "10000"),
+        "--host", "0.0.0.0",
+        "-m", "models"
     ])
 
 if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
-    loop.create_task(start_rasa())
+    # Start Rasa in a background thread (same process)
+    threading.Thread(target=run_rasa).start()
 
-    # use same port for Flask to help Render detect it
+    # Start Flask app on the same port to keep Render happy
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
