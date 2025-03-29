@@ -15,12 +15,12 @@ if __name__ == "__main__":
         "rasa", "run",
         "--enable-api",
         "--cors", "*",
-        "-p", "10000",
-        "-i", "0.0.0.0",
+        "--port", "10000",          
+        "--host", "0.0.0.0",        
         "-m", "models"
     ]
     subprocess.Popen(rasa_command)
-    
-    # Start lightweight Flask app to satisfy Render's port detection
+
+    # Start lightweight Flask app on the PORT Render expects
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
