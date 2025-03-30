@@ -123,3 +123,9 @@ stories:
   steps:
   - intent: ask_confidentiality
   - action: utter_ask_confidentiality
+
+- story: ask about course timing
+  steps:
+    - intent: course_timing
+    - action: utter_course_timing
+

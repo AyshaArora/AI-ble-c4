@@ -55,6 +55,12 @@ rules:
   - intent: ask_emergency_help
   - action: utter_ask_emergency_help
 
+- rule: respond to course timing
+  steps:
+    - intent: course_timing
+    - action: utter_course_timing
+
+
 
 
 
