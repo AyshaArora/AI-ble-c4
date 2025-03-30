@@ -148,12 +148,10 @@ responses:
   utter_ask_confidentiality:
     - text: Everything you share is confidential unless permission is given. If you're under 16 and at risk, it may be reported by law.
 
-
-utter_course_timing:
-    - text: "Most online courses are asynchronous, but some may require live attendance. Check your course outline or contact your teacher."
+  utter_course_timing:
+    - text: "You do not need to log in at a specific time. Courses are asynchronous."
 
 actions:
-  - utter_course_timing
 
   - action_provide_legal_aid
   

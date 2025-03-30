@@ -289,5 +289,13 @@ nlu:
     - What happens to information I share with my school social worker?
     - Is my conversation with the social worker confidential?
     - Will my information be kept private?
+    
+- intent: course_timing
+  examples: |
+    - Do I have to log in to my course at a specific time?
+    - Do I need to log in at a specific time for my class?
+    - Are my courses synchronous or asynchronous?
+    - Is attendance time-bound?
+
 
 
