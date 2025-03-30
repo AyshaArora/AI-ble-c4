@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rasa Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    #chat-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+    }
+
+    #chat-box {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .message {
+      margin: 10px 0;
+      padding: 10px 14px;
+      border-radius: 20px;
+      max-width: 80%;
+      line-height: 1.4;
+    }
+
+    .user {
+      background: #007bff;
+      color: white;
+      align-self: flex-end;
+    }
+
+    .bot {
+      background: #e5e5e5;
+      color: #333;
+      align-self: flex-start;
+    }
+
+    #user-input {
+      display: flex;
+      border-top: 1px solid #ccc;
+    }
+
+    #input-box {
+      flex: 1;
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="chat-container">
+    <div id="chat-box"></div>
+    <div id="user-input">
+      <input type="text" id="input-box" placeholder="Type your message and press Enter..." />
+    </div>
+  </div>
+
+  <script>
+    const inputBox = document.getElementById('input-box');
+    const chatBox = document.getElementById('chat-box');
+
+    // 🌐 Toggle your Rasa server here
+    const rasa_server_url = "https://7b38-142-114-64-46.ngrok-free.app"; // ✅ Active NGROK
+    // const rasa_server_url = "https://ai-ble-c4.onrender.com";        // ❌ Commented out: Render
+
+    const webhook_url = `${rasa_server_url}/webhooks/rest/webhook`;
+
+    inputBox.addEventListener('keypress', async (e) => {
+      if (e.key === 'Enter') {
+        const message = inputBox.value.trim();
+        if (!message) return;
+
+        appendMessage(message, 'user');
+        inputBox.value = '';
+
+        try {
+          const res = await fetch(webhook_url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ sender: 'user', message: message })
+          });
+
+          const data = await res.json();
+          if (data.length === 0) appendMessage("🤖 Sorry, I didn't get that.", 'bot');
+          data.forEach(({ text }) => appendMessage(text, 'bot'));
+        } catch (err) {
+          appendMessage("❌ Server error. Try again later.", 'bot');
+        }
+      }
+    });
+
+    function appendMessage(text, sender) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = `message ${sender}`;
+      msgDiv.textContent = text;
+      chatBox.appendChild(msgDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  </script>
+
+</body>
+</html>
