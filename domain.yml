@@ -35,6 +35,10 @@ intents:
   - ask_who_social_worker_talks_to
   - ask_confidentiality
   - course_timing
+  - ask_join_school_board
+  - bot_specialization
+  - ask_board_info
+  - ask_closest_board
 
 
 
@@ -53,6 +57,8 @@ responses:
         - "Do I have to log in to my course at a specific time?"
         
         How can I assist you today?
+        This information is for educational support only and does not constitute legal advice.
+
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -150,6 +156,25 @@ responses:
 
   utter_course_timing:
     - text: "You do not need to log in at a specific time. Courses are asynchronous."
+
+utter_ask_join_school_board:
+  - text: "Welcome to Canada! To register your child in the Peel District School Board (PDSB), visit the PDSB website and use their online registration tool. You'll need your address and supporting documents like proof of residence and identification."
+
+utter_bot_specialization:
+  - text: "I'm here to support students and families with questions related to school access, online learning, mental health, speech services, and social worker support—especially for newcomers or those facing challenges in Ontario's education system."
+
+utter_ask_board_info:
+  - text: |
+      Here’s a quick overview:
+      - **DPCDSB**: Dufferin-Peel Catholic District School Board (Catholic schools in Mississauga, Brampton, Caledon)
+      - **PDSB**: Peel District School Board (Public schools in Peel Region)
+      - **TDSB**: Toronto District School Board (Public schools in Toronto)
+      - **TCDSB**: Toronto Catholic District School Board (Catholic schools in Toronto)
+
+utter_ask_closest_board:
+  - text: "I can't determine your location yet. But you can check your local board using Ontario’s school board lookup: https://www.ontario.ca/page/find-school"
+
+
 
 actions:
 

@@ -16,6 +16,7 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    
 
 - intent: goodbye
   examples: |
@@ -296,6 +297,13 @@ nlu:
     - Do I need to log in at a specific time for my class?
     - Are my courses synchronous or asynchronous?
     - Is attendance time-bound?
+
+policies:
+  - name: FallbackClassifier
+    threshold: 0.3
+    ambiguity_threshold: 0.1
+    fallback_action_name: "action_default_fallback"
+
 
 
 
