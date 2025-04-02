@@ -297,6 +297,23 @@ nlu:
     - Do I need to log in at a specific time for my class?
     - Are my courses synchronous or asynchronous?
     - Is attendance time-bound?
+- intent: express_love_kakkah
+  examples: |
+    - kakah
+    - kakkah
+    - hey kakkah
+    - hi kakah
+    - kakkah you there?
+
+- intent: ask_school_info
+  examples: |
+    - Tell me about school
+    - I want to register for school
+    - What is school like in Ontario?
+    - School help
+    - Tuition support
+    - What about tuition fees?
+
 
 policies:
   - name: FallbackClassifier

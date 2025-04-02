@@ -39,6 +39,9 @@ intents:
   - bot_specialization
   - ask_board_info
   - ask_closest_board
+  - express_love_kakkah
+  - ask_school_info
+
 
 
 
@@ -157,22 +160,29 @@ responses:
   utter_course_timing:
     - text: "You do not need to log in at a specific time. Courses are asynchronous."
 
-utter_ask_join_school_board:
-  - text: "Welcome to Canada! To register your child in the Peel District School Board (PDSB), visit the PDSB website and use their online registration tool. You'll need your address and supporting documents like proof of residence and identification."
+  utter_ask_join_school_board:
+    - text: "Welcome to Canada! To register your child in the Peel District School Board (PDSB), visit the PDSB website and use their online registration tool. You'll need your address and supporting documents like proof of residence and identification."
 
-utter_bot_specialization:
-  - text: "I'm here to support students and families with questions related to school access, online learning, mental health, speech services, and social worker support—especially for newcomers or those facing challenges in Ontario's education system."
+  utter_bot_specialization:
+    - text: "I'm here to support students and families with questions related to school access, online learning, mental health, speech services, and social worker support—especially for newcomers or those facing challenges in Ontario's education system."
 
-utter_ask_board_info:
-  - text: |
-      Here’s a quick overview:
-      - **DPCDSB**: Dufferin-Peel Catholic District School Board (Catholic schools in Mississauga, Brampton, Caledon)
-      - **PDSB**: Peel District School Board (Public schools in Peel Region)
-      - **TDSB**: Toronto District School Board (Public schools in Toronto)
-      - **TCDSB**: Toronto Catholic District School Board (Catholic schools in Toronto)
+  utter_ask_board_info:
+    - text: |
+        Here’s a quick overview:
+        - **DPCDSB**: Dufferin-Peel Catholic District School Board (Catholic schools in Mississauga, Brampton, Caledon)
+        - **PDSB**: Peel District School Board (Public schools in Peel Region)
+        - **TDSB**: Toronto District School Board (Public schools in Toronto)
+        - **TCDSB**: Toronto Catholic District School Board (Catholic schools in Toronto)
 
-utter_ask_closest_board:
-  - text: "I can't determine your location yet. But you can check your local board using Ontario’s school board lookup: https://www.ontario.ca/page/find-school"
+  utter_express_love_kakkah:
+    - text: "I love youuu Aditya, kakkah ❤️ You're the best thing in my circuits!"
+
+  utter_ask_school_info:
+    - text: "In Ontario, all children have a right to attend school regardless of immigration status. Want help finding your local school board?"
+
+
+  utter_ask_closest_board:
+    - text: "I can't determine your location yet. But you can check your local board using Ontario’s school board lookup: https://www.ontario.ca/page/find-school"
 
 
 

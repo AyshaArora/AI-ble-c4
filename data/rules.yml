@@ -59,6 +59,17 @@ rules:
   steps:
     - intent: course_timing
     - action: utter_course_timing
+    
+- rule: Respond to kakkah with love
+  steps:
+    - intent: express_love_kakkah
+    - action: utter_express_love_kakkah
+
+- rule: Provide school information
+  steps:
+    - intent: ask_school_info
+    - action: utter_ask_school_info
+
 
 
 
