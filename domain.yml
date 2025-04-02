@@ -40,7 +40,11 @@ intents:
   - ask_board_info
   - ask_closest_board
   - express_love_kakkah
+  - online_learning_fit
+  - bot_specialty
   - ask_school_info
+  - ask_tuition
+  - kakkah
 
 
 
@@ -184,7 +188,22 @@ responses:
   utter_ask_closest_board:
     - text: "I can't determine your location yet. But you can check your local board using Ontario’s school board lookup: https://www.ontario.ca/page/find-school"
 
+  utter_bot_specialty:
+    - text: "I'm your education support chatbot! I help with school enrollment, course login, social worker services, language help, and more."
 
+  utter_school_info:
+    - text: "In Ontario, all children have a right to attend school regardless of immigration status. Want help finding your local school board? This information is for educational support only and does not constitute legal advice."
+
+  utter_tuition_info:
+    - text: "You do not need to pay tuition to attend public schools if you live in Ontario and are under 18. Want help finding your school board? This is not legal advice."
+
+  utter_kakkah:
+    - text: "I love youuu kakkah ❤️ You're the best thing in my circuits!"
+
+  utter_online_learning_fit:
+    - text: "Online learning is great if you’re self-motivated and good at managing your time! Not sure? I can help assess your learning style. This is not legal advice."
+
+  
 
 actions:
 
