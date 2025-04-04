@@ -75,6 +75,17 @@ rules:
     - intent: ask_social_worker_help
     - action: utter_ask_social_worker_help
 
+- rule: Respond to enrolment question
+  steps:
+    - intent: ask_enrolment
+    - action: utter_ask_enrolment
+    
+- rule: Respond to immigration help
+  steps:
+    - intent: ask_immigration_resources
+    - action: utter_ask_immigration_resources
+
+
 
 
 

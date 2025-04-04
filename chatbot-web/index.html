@@ -113,6 +113,25 @@
       chatBox.appendChild(msgDiv);
       chatBox.scrollTop = chatBox.scrollHeight;
     }
+    // 💬 Auto-send "hello" on load after 500ms
+  window.onload = () => {
+  setTimeout(() => {
+    const greeting = `Hello! 👋 I'm your education support chatbot. You can ask me questions like:
+    - "How do I log in to my online course?"
+    - "Can I go to school if I don’t have immigration status?"
+    - "What should I do if I need a school social worker?"
+    - "How does the speech-language pathologist help students?"
+    - "Do I have to log in to my course at a specific time?"
+
+    How can I assist you today?
+    This information is for educational support only and does not constitute legal advice.`;
+
+    appendMessage(greeting, 'bot'); // bot, not user
+    sendMessage("hello"); // triggers real response from Rasa
+  }, 500);
+};
+
+
   </script>
 
 </body>

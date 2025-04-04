@@ -314,6 +314,22 @@ nlu:
     - Tuition support
     - What about tuition fees?
 
+- intent: ask_enrolment
+  examples: |
+    - How can I enrol?
+    - I want to register my child for school
+    - What is the enrolment process?
+    - Where do I enroll?
+
+- intent: ask_immigration_resources
+  examples: |
+    - Where can I get help with immigration?
+    - Who can help me with immigration papers?
+    - I need immigration advice
+    - Where can I find immigration resources?
+
+
+
 
 policies:
   - name: FallbackClassifier
