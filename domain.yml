@@ -45,6 +45,8 @@ intents:
   - ask_school_info
   - ask_tuition
   - kakkah
+  - ask_enrolment
+  - ask_immigration_resources
 
 
 
@@ -89,7 +91,12 @@ responses:
   - text: "Your school is not required to report your immigration status to authorities. However, not all educators may be aware of privacy protections."
 
   utter_ask_legal_aid:
-  - text: "There are organizations that provide free legal aid. You can contact Ontario Justice Education Network or Legal Aid Ontario."
+    - text: |
+      You can contact:
+      - Legal Aid Ontario: 1-800-668-8258 or visit https://www.legalaid.on.ca/
+      - Ontario Justice Education Network: https://ojen.ca/
+      - These services offer free or low-cost legal help.
+
 
   utter_ask_financial_aid:
   - text: "Some scholarships and financial aid options may be available for students regardless of immigration status. You can check community organizations, universities, and private scholarships."
@@ -203,7 +210,17 @@ responses:
   utter_online_learning_fit:
     - text: "Online learning is great if you’re self-motivated and good at managing your time! Not sure? I can help assess your learning style. This is not legal advice."
 
-  
+  utter_ask_enrolment:
+    - text: "To enrol in a DPCDSB school, visit the board's registration page: https://www.dpcdsb.org/parents/registration. You'll need documents like proof of address, immunization records, and immigration status if available. Contact your local school for guidance."
+
+  utter_ask_immigration_resources:
+    - text: |
+        You can contact:
+        - FCJ Refugee Centre: https://www.fcjrefugeecentre.org/
+        - Catholic Crosscultural Services: https://www.cathcrosscultural.org/
+        - 211 Ontario: Call 211 for immigrant services in your area.
+        These organizations offer help regardless of status.
+
 
 actions:
 
